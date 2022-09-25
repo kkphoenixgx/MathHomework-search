@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+  overflow-x: hidden;
+}
+
+/* ---------- Header ---------- */
+
+header{
+    text-align: center;
+    background-color: rgb(39, 39, 39);
+    padding: 10px;
+}
+
+  h1, h4{
+    color: white;
+  }
+  h1{
+    text-shadow: -5px 2px #5e1da8;
+  }
+
+/* ---------- Section ---------- */
+
+section{
+  background-color: black;
+  display: grid;
+  grid-template-columns: 85vh 50vh;
+  justify-content: center;
+}
+  aside, main{
+    margin: 5px;
+  }
+  aside{
+    position: relative;
+  }
+  .mainGraph{
+    height: 100%;
+  }
+  main{
+    align-self: center;
+    margin-left: 37px;
+  }
+  #Turma-3001{ width: auto; }
+  #Turma-3002{ width: auto; }
+  #Turma-3003{ width: auto; }
+  aside div{
+    margin: 3px;
+  }
+
+/* ---------- Footer ---------- */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    border-top: 2px solid #d802f59f;
+}
+  .textos{
+    padding: 2%;
+  }
+  .estado{
+    text-align: center;
+    margin: auto 0;
+  }
+  .estado img{
+    width: 40%;
+  }
+
+/* ---------- Responsive ---------- */
+
+/* Smartphones (portrait) */
+@media only screen and (max-width: 767px) {
+
+  section{
+    display: flex;
+    flex-direction: column;
+  }
+  aside{
+    margin-top: 5%;
+    align-self: center;
+  }
+  aside div, main{
+    margin: 0px;
+  }
+  #piechart_3d, #Turma-3001, #Turma-3002, #Turma-3003{
+    width: 80vw;
+  }
+
+}
+
+/* iPads (portrait and landscape)  */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+
+  #piechart_3d{
+    height: 80vh;
+    margin-top: 5%;
+  }
+
+  section{
+    display: flex;
+    flex-direction: column;
+  }
+  aside{
+    margin-top: 5%;
+    align-self: center;
+  }
+  aside div, main{
+    margin: 0px;
+  }
+  #piechart_3d, #Turma-3001, #Turma-3002, #Turma-3003{
+    width: 80vw;
+  }
+
+}
+
+/* Desktops and laptops  */
+@media only screen and (min-width: 1224px) {
+  #piechart_3d{
+    height: 96.5vh;
+  }
+}
